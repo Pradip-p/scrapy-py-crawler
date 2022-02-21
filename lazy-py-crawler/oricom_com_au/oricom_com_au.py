@@ -1,4 +1,3 @@
-#PID: 5 Description: thread_test
 
 import os
 import scrapy

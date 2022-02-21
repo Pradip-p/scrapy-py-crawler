@@ -1,4 +1,3 @@
-#PID: 6 Description: threadsquad_com
 import os
 import sys
 from tabnanny import check

@@ -1,4 +1,3 @@
-#PID: 5 Description: thread_test
 
 from email.mime import image
 from ipaddress import ip_address
