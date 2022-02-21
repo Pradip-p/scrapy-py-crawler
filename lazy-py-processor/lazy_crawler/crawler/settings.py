@@ -73,8 +73,6 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'lazy_crawler.crawler.pipelines.AmazonPipeline': 300
-    # "lazy_crawler.crawler.pipelines.MongoPipeline": 300,
-    # 'reddit.pipelines.MongoPipeline': 300,
     }
 
 RETRY_TIMES = 5
@@ -114,7 +112,6 @@ DOWNLOADER_MIDDLEWARES = {
 #     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 140,
     'lazy_crawler.crawler.middlewares.RandomUserAgentMiddleware': 400,
 #     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
-#     # 'grepsr_crawler.crawler.middlewares.PuppeteerMiddleware': 220,
 }
 ################################################################
 # PROXY SETTINGS
