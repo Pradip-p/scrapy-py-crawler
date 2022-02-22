@@ -30,7 +30,6 @@ We use semantic versioning(https://en.wikipedia.org/wiki/Software_versioning)
 
 In order to build the docker container.
 
-0. Increase the tag in `deploy/vortex-py-backend/requirements.txt` to your current tag(this is used to install requirements)
 1. Commit your changes.
 2. Increase the version(patch, minor , major)
 
