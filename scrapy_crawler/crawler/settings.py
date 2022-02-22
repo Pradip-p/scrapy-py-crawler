@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
-from lazy_crawler.lib.user_agent import get_user_agent
-from lazy_crawler.lib.proxy import get_proxy
+from scrapy_crawler.lib.user_agent import get_user_agent
+from scrapy_crawler.lib.proxy import get_proxy
 # Scrapy settings for crawler project
 #
 # For simplicity, this file contains only settings considered important or
