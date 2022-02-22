@@ -19,7 +19,8 @@ class LazyBaseCrawler(scrapy.Spider):
     # START URLS for your project.
     start_urls = ['']
     
-    # custom_settings = {
+    # custom_settings
+    # = {
     #     # 'ITEM_PIPELINES': {  
     #     #     "lazy_crawler.crawler.pipelines.MongoPipeline": 300
     #     # },

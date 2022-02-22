@@ -4,10 +4,10 @@ with open('requirements.txt') as f:
     requirements = f.read().splitlines()
 
 setup(
-    name='lazy_crawler',
+    name='scrapy_crawler',
     version='0.1',
-    description='Scrapy boiler plate for LazyScraping',
-    url='git@github.com:LazyScrapper/vortex-py-plugins.git',
+    description='Scrapy boiler plate for Scraping',
+    url='git@github.com:scrapper/vortex-py-plugins.git',
     author='Pradip Thapa',
     author_email='thapapradip542@gmail.com',
     license='private',

@@ -111,7 +111,7 @@ RANDOMIZE_DOWNLOAD_DELAY = True
 
 DOWNLOADER_MIDDLEWARES = {
 #     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 140,
-    'lazy_crawler.crawler.middlewares.RandomUserAgentMiddleware': 400,
+    'scrapy_crawler.crawler.middlewares.RandomUserAgentMiddleware': 400,
 #     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
 }
 
