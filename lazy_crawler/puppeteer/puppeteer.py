@@ -54,12 +54,14 @@ async def main(url: str, headless: bool, proxy: str = None, cookies: List[dict] 
     print('visiting url')
     try:
         response = await page.goto(url, timeout=timeout)
+        print('visited url')
     except TimeoutError:
         print('Timeout')
 
     if not close:
         return {'page': page, 'response': response}
     print('page loaded')
+    
     cookies = await page.cookies()
     # print('cookies', cookies)
     content = await page.content()

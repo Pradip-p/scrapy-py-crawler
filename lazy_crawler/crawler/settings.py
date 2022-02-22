@@ -28,7 +28,7 @@ ROBOTSTXT_OBEY = False
 
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -108,11 +108,13 @@ RANDOMIZE_DOWNLOAD_DELAY = True
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
+
 DOWNLOADER_MIDDLEWARES = {
 #     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 140,
     'lazy_crawler.crawler.middlewares.RandomUserAgentMiddleware': 400,
 #     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
 }
+
 ################################################################
 # PROXY SETTINGS
 ################################################################
