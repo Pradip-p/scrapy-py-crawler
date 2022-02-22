@@ -69,6 +69,8 @@ instance/
 .scrapy
 .csv
 .xlsx
+*.lib
+*.lib64
 # Sphinx documentation
 docs/_build/
 

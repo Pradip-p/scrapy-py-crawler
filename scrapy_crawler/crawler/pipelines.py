@@ -1,7 +1,7 @@
 from scrapy import signals
 from scrapy.exporters import CsvItemExporter, XmlItemExporter
 
-class AmazonPipeline(object):
+class DownloadPipeline(object):
     @classmethod
     def from_crawler(cls, crawler):
         pipeline = cls()

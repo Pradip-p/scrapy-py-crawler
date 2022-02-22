@@ -12,7 +12,7 @@ from scrapy_crawler.lib.user_agent import get_user_agent
 
 class LazyBaseCrawler(scrapy.Spider):
     
-    name = "lazy_base_crawler"
+    name = "scrapy_base_crawler"
 
     allowed_domains = [""]
 
@@ -23,12 +23,6 @@ class LazyBaseCrawler(scrapy.Spider):
     #     # 'ITEM_PIPELINES': {  
     #     #     "lazy_crawler.crawler.pipelines.MongoPipeline": 300
     #     # },
-        
-    #     "name": "lazy_base_crawler",
-    #     "ITEM_PIPELINES" : {
-    #         'lazy_crawler.crawler.pipelines.AmazonPipeline': 300
-    #     }
-    # }
-    
+
     
 

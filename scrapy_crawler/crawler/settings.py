@@ -11,10 +11,10 @@ from scrapy_crawler.lib.proxy import get_proxy
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "lazy_py_crawler"
+BOT_NAME = "scrapy_crawler"
 
-SPIDER_MODULES = ["lazy_crawler.crawler.spiders"]
-NEWSPIDER_MODULE = "lazy_crawler.crawler.spiders"
+SPIDER_MODULES = ["scrapy_crawler.crawler.spiders"]
+NEWSPIDER_MODULE = "scrapy_crawler.crawler.spiders"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 
@@ -72,7 +72,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'lazy_crawler.crawler.pipelines.AmazonPipeline': 300
+    'scrapy_crawler.crawler.pipelines.DownloadPipeline': 300
     }
 
 RETRY_TIMES = 5
